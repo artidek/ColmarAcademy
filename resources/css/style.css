@@ -1,3 +1,20 @@
+h1,h2,h3,h4,h5,h6,p,footer {
+    color: #494b4a;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: white;
+}
+
+main,footer {
+    position: relative;
+    top: 4rem;
+}
 @media only screen and (max-width: 650px){
 
     h1,h2,h3,h4,h5,h6,a,p{
@@ -62,6 +79,10 @@
         padding: 1rem 1rem 3rem;
     }
 
+    .article a {
+        color: #6995cd;
+    }
+
     .content{
         padding: 1rem;
     }
@@ -77,7 +98,6 @@
     .button{
         display: block;
         padding: .5rem 0;
-        background-color: black;
         width: 100%;
         text-align: center;
         font-size: 1.6rem;
@@ -98,13 +118,13 @@
     }
 
     .course-selection {
-        background-color: gray;
+        
         margin-bottom: .5rem;
     }
 
     .course-button {
         display: block;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     #courses-container {
@@ -112,7 +132,7 @@
     }
 
     .section-break {
-        box-shadow: 0 1px 1px gray;
+        box-shadow: 0 1px 1px #dbdbdb;
     }
 
     #thesis-exhibits {
@@ -120,7 +140,7 @@
     }
 
     #video-container {
-        background-color: gray;
+        
         position: relative;
     }
 
@@ -131,7 +151,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: black;
         position: absolute;
         top: 40%;
         left: 42.5%;
@@ -160,4 +179,43 @@
         padding: 1rem;
         font-size: .8rem;
     }
+
+    #courses {
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+   h1 {
+       font-size: 2rem;
+   }
+   
+   h2 {
+       font-size: 1.8rem;
+   }
+
+   h3 {
+       font-size: 1.2rem;
+   }
+
+   .content p,a {
+       font-size: .9rem;
+   }
+
+   #play-background {
+       width: 20%;
+       height: 25%;
+   }
+
+   .article {
+        padding: 1rem 1rem 2rem;
+   }
+}
+
+.background {
+  background-color: #dbdbdb;
+}
+
+.button-background {
+    background-color: #9b9b9b;
 }
