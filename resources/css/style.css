@@ -367,7 +367,7 @@ nav ul li a {
     
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 823px){
 
     .right-side.desktop {
         display: none;
