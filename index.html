@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <header class="mobile">
-        <nav>
+    <header >
+        <nav class="mobile">
             <ul>
                 <li>
                     <a href="#"><img src="./resources/images/ic-logo.svg" alt="company logo"></a>
@@ -28,26 +28,93 @@
                 </li>
             </ul>
         </nav>
-
+        <nav class="desktop">
+            <a href="#" id="logo">
+                <div id="logo-img">
+                    <img src="./resources/images/ic-logo.svg" alt="company logo">
+                </div>
+                COLMAR<span>ACADEMY</span>
+            </a>
+            <ul>
+                <li>
+                    <a href="#">On campus</a>
+                </li>
+                <li>
+                    <a href="#">Online</a>
+                </li>
+                <li>
+                    <a href="#">For companies</a>
+                </li>
+                <li>
+                    <a href="#">Sign in</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="site-main-info" class="background">
-            <div class="image-container">
-                <img src="./resources/images/banner.jpg" alt="students excersizing">
+            <div class="left-side">
+                <div class="image-container">
+                    <img src="./resources/images/banner.jpg" alt="students excersizing">
+                </div>
             </div>
-            <div class="main-header">
-                <h1>Learn something new everyday</h1>
-
-            </div>
-            <div class="main-info-container">
-                <h3>Lorem ipsum dolor sit amet, consecteur adipiscing elit.</h3>
-            </div>
-            <div class="main-info-container">
-                <a class="button button-background" href="#">Start here</a>
+            <div class="right-side">
+                <div class="main-header">
+                    <h1>Learn something new everyday</h1>
+    
+                </div>
+                <div class="main-info-container">
+                    <h3>Lorem ipsum dolor sit amet, consecteur adipiscing elit.</h3>
+                </div>
+                <div class="main-info-container">
+                    <a class="button" href="#">Start here</a>
+                </div>
             </div>
         </section>
         <section id="info-articles" class="section-break">
-            <div class="article">
+            <div class="left-side  desktop">
+                <div class="image-container">
+                    <img src="./resources/images/information-main.jpg" alt="">
+                </div>
+                <article>
+                    <h2>It doesn't hurt keep practicing</h2>
+                    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquant et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                    <a href="#" target="_blank">Emanuel, Sr Strategist at Hiring.com</a>
+                </article>
+            </div>
+            <div class="right-side desktop">
+                <div class="article">
+                    <div class="image-container">
+                        <img src="./resources/images/information-orientation.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Orientation date</h3>
+                        <p>Tue 10/11 & Wed 10/12: 8am-8pm</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="article">
+                    <div class="image-container">
+                        <img src="./resources/images/information-campus.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Our campus</h3>
+                        <p>Find which campus is close by you</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+                <div class="article last-item">
+                    <div class="image-container">
+                        <img src="./resources/images/information-guest-lecture.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Special guest lecture</h3>
+                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="article mobile">
                 <div class="image-container">
                     <img src="./resources/images/information-orientation-mobile.jpg" alt="">
                 </div>
@@ -57,7 +124,7 @@
                     <a href="#">Read more</a>
                 </div>
             </div>
-            <div class="article">
+            <div class="article mobile">
                 <div class="image-container">
                     <img src="./resources/images/information-campus-mobile.jpg" alt="">
                 </div>
@@ -67,7 +134,7 @@
                     <a href="#">Read more</a>
                 </div>
             </div>
-            <div class="article last-item">
+            <div class="article last-item mobile">
                 <div class="image-container">
                     <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="">
                 </div>
@@ -82,36 +149,78 @@
             <div class="section-heading">
                 <h2>Start learning</h2>
             </div>
-            <div id="courses-container background">
+            <div id="courses-container">
                 <div class="course-selection">
                     <a href="#" class="course-button background">
-                        <h3>Software engineering</h3>
+                        <div class="image-container desktop">
+                            <img src="./resources/images/course-software.jpg" alt="software engineering">
+                        </div>
+                        <div class="content">
+                            <h3>Software engineering</h3>
+                            <h4 class="desktop">courses</h4>
+                            <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
+                        </div>
                     </a>
                 </div>
                 <div class="course-selection">
                     <a href="#" class="course-button background">
-                        <h3>Computer art</h3>
+                        <div class="image-container desktop">
+                            <img src="./resources/images/course-computer-art.jpg" alt="computer art">
+                        </div>
+                        <div class="content">
+                            <h3>Computer art</h3>
+                            <h4 class="desktop">courses</h4>
+                            <p class="desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                        </div>
                     </a>
                 </div>
                 <div class="course-selection">
                     <a href="#" class="course-button background">
-                        <h3>Design</h3>
+                        <div class="image-container desktop">
+                            <img src="./resources/images/course-design.jpg" alt="course design">
+                        </div>
+                        <div class="content">
+                            <h3>Design</h3>
+                            <h4 class="desktop">courses</h4>
+                            <p class="desktop">User Experience Design, User Research, Visual Design</p>
+                        </div>
                     </a>
                 </div>
                 <div class="course-selection">
                     <a href="#" class="course-button background">
-                        <h3>Data</h3>
+                        <div class="image-container desktop">
+                            <img src="./resources/images/course-data.jpg" alt="course data">
+                        </div>
+                        <div class="content">
+                            <h3>Data</h3>
+                            <h4 class="desktop">courses</h4>
+                            <p class="desktop">Data Science, Big Data, SQL, Data Visualiation</p>
+                        </div>
                     </a>
                 </div>
                 <div class="course-selection">
                     <a href="#" class="course-button background">
-                        <h3>Business</h3>
+                        <div class="image-container desktop">
+                            <img src="./resources/images/course-business.jpg" alt="course business">
+                        </div>
+                        <div class="content">
+                            <h3>Business</h3>
+                            <h4 class="desktop">courses</h4>
+                            <p class="desktop">Product Development, Business Development, Startup</p>
+                         </div>
                     </a>
                 </div>
                 <div class="course-selection">
                     <a href="#" class="course-button background">
-                        <h3>Marketing</h3>
-                    </a>
+                        <div class="image-container desktop">
+                            <img src="./resources/images/course-marketing.jpg" alt="course marketing">
+                        </div>
+                        <div class="content">
+                            <h3>Marketing</h3>
+                            <h4 class="desktop">courses</h4>
+                            <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
+                         </div>
+                   </a>
                 </div>
             </div>
 
@@ -120,7 +229,45 @@
             <div class="section-heading">
                 <h2>Thesis exhibits</h2>
             </div>
-            <div id="video-container" class="background">
+            <div id="exhibit-container">
+                <div class="left-side desktop">
+                    <div id="video-container" class="background">
+                        <div id="play-background" class="button-background">
+                            <a href="./resources/videos/thesis.mp4" target="_blank">
+                                <i class="fas fa-play"></i>
+                           </a> 
+                        </div>
+                        <video  preload="none">
+                            <source src="./resources/videos/thesis.mp4">
+                        </video>
+                    </div>
+                    <article>
+                        <h2>Reimagine urban</h2>
+                        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquant et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                    </article>
+                </div>
+                <div class="right-side desktop">
+                    <div class="article last-item">
+                        <div class="image-container">
+                            <img src="./resources/images/thesis-fisma.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Fisma: Design and Prototype</h3>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="image-container">
+                            <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Now and then</h3>
+                            <p>Research study about New York</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="video-container" class="background mobile">
                 <div id="play-background" class="button-background">
                     <a href="./resources/videos/thesis.mp4" target="_blank">
                         <i class="fas fa-play"></i>
@@ -134,6 +281,8 @@
     </main>
     <footer>
         &copy; 2016 Colmar Academy. All rights reserved
+        <a href="#" class="desktop">Terms</a>
+        <a href="#" class="desktop">Privacy</a>
     </footer>
 </body>
 
